@@ -7,17 +7,22 @@
     <title>Serega krasava</title>
     <meta name="keywords" content="html, course, css, student, tags, резюме"> 
     <meta name="description" content="Мой сайт резюме по курсу html ">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="https://s1.cdn.autoevolution.com/images/news/1000-hp-kamaz-drift-truck-is-built-in-russia-does-tandem-drifting-136745_1.jpg" width="500" alt="">
-    <h1>Сергей Колесников</h1>
+    <div class="container">
+    <div class="info">
+    <img src="https://s1.cdn.autoevolution.com/images/news/1000-hp-kamaz-drift-truck-is-built-in-russia-does-tandem-drifting-136745_1.jpg"  alt="Сергей Колесников" class="avatar">
+   <div class="info-text"> <h1>Сергей Колесников</h1>
 
    
     <p>Я работал на <strong>камазе</strong>, я работал на <strong>стройке</strong>, щас <em>дома</em> уже</p>
     <p>
-<strong>Мои хобби:</strong>
+    </div>      
+<div class="card bg-yellow">
+    <h2>Мои хобби</h2>
    
-<ul>
+<ul class="list">
     <li>Блинчиков пердануть</li>
     <li>Пердануть</li>
     <li>Покурировать</li>
@@ -28,15 +33,17 @@
     <li>Всё</li>
 </ul>
     </p>
-    <h2>Кенты:</h2>
-    <table >
-        <thead>
+</div>    
+</div> 
+<div class="card bg-red">  <h2>Кенты:</h2>
+    <table class="table">
+        <!-- <thead>
             <tr>
                 <th>Имя</th>
                 <th>Возраст</th>
                 <th>Работа</th>
             </tr>
-        </thead>
+        </thead> -->
         <tbody>
       
         <tr>
@@ -59,17 +66,25 @@
             <td>26</td>
             <td>Сенсей</td>
         </tr>
+        <tr>
+            <td>Илюха американец</td>
+            <td>26</td>
+            <td>Дрифтер, трейдер, нумезмат</td>
+        </tr>
     </tbody>
     </table>
+</div>
+<div class="card bg-green">
+    <div class="link-list">
     <br>
     <h4> <strong>Список социальных сетей:</strong>
         <br>
         <a href="https://Vk.com/npocmou537" target="_blank">VK</a> 
         |
         <a href="https://telegram.org/" target="_blank">Telegram официальный сайт</a> 
-        
-
-
+    </div>   
+    
+</div>
     </h4>
 <h3> Связаться со мной</h3>
 <div>
@@ -83,12 +98,13 @@
     placeholder="Введите E-mail">
 </div>
 
-<div>
+    <div>
     <label for="message">Ваше сообщение:</label>
     <br>
     <textarea id="message" cols="15" rows="10" placeholder="Введите ваше сообщение..."></textarea>
 
-    
+    <input class="btn" type="submit" value="Отправить!">
+    </div>
 </div>
 </body>
 </html>
